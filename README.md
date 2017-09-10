@@ -1,2 +1,4 @@
-# My-Portfolio
-This is my professional portfolio
+# Michael O'Connor's portfolio
+
+This is my professional portfolio. It uses AWS and ReactJS
+
