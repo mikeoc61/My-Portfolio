@@ -13,6 +13,7 @@ import boto3
 from botocore.client import Config
 import StringIO
 import zipfile
+import mimetypes
 
 def lambda_handler(event, context):
 
@@ -27,7 +28,8 @@ def lambda_handler(event, context):
     with zipfile.ZipFile(portfolio_zip) as myzip:           # for each file in compressed archive
         for nm in myzip.namelist():                         # copy file to target bucket
                 obj = myzip.open(nm)
-                portfolio_bucket.upload_fileobj(obj, nm)    
+                portfolio_bucket.upload_fileobj(obj, nm,
+		  ExtraArgs={'ContentType': mimetypes.guess_type(nm)[0]})
                 portfolio_bucket.Object(nm).Acl().put(ACL='public-read')
 
     print "Portfolio Lambda Function complete"
