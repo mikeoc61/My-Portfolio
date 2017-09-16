@@ -22,7 +22,6 @@ from   botocore.client import Config
 import StringIO
 import zipfile
 import mimetypes
-import time
 
 def lambda_handler(event, context):
 
