@@ -22,6 +22,16 @@ const myWork = [
       'src': "images/example_2.jpg",
       'comment': ""
     }
+  },
+  {
+    'title': "AWS Button / IFTTT",
+    'href': "https://github.com/mikeoc61/IFTTT-Stuff",
+    'desc': "Code used to integrate linux shell or AWS IoT Button (via AWS Lambda) with IFTTT, typically for home automation",
+    'image': {
+      'desc': "AWS IoT IFTTT Code",
+      'src': "images/example_3.jpg",
+      'comment': ""
+    }
   }
 ]
 
