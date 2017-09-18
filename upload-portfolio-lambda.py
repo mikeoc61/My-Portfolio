@@ -13,7 +13,7 @@
 #
 # Author: Michael O'Connor
 #
-# Last Change: September 14, 2017
+# Last Change: September 17, 2017
 #
 #####
 
@@ -41,8 +41,6 @@ def lambda_handler(event, context):
         "objectKey": 'portfoliobuild.zip'
     }
 
-    s3 = boto3.resource('s3', config=Config(signature_version='s3v4'))
-
     # Normal path through following code will be triggered by CodePipeline
 
     try:
@@ -55,6 +53,8 @@ def lambda_handler(event, context):
                 if artifact["name"] == "MyAppBuild":
                     location = artifact["location"]["s3Location"]
 
+        s3 = boto3.resource('s3', config=Config(signature_version='s3v4'))
+
         print "Building portfolio from: " + str(location)
 
         portfolio_bucket = s3.Bucket(targetBucket)          # target bucket
@@ -62,32 +62,37 @@ def lambda_handler(event, context):
 
         # Copy newly built zip archive contents into memory
 
-        portfolio_zip = StringIO.StringIO()
+        portfolio_zip = StringIO.StringIO()                 # Create an in memory buffer
+
         build_bucket.download_fileobj(location["objectKey"], portfolio_zip)
 
-        # Now, copy the individual zipfile contents into the target S3 bucket
-        # and set metadata appropriately and access permissions to public
+        # Now, copy the individual zipfile contents into the target S3 bucket,
+        # set metadata appropriately and access permissions to public
 
         with zipfile.ZipFile(portfolio_zip) as myzip:
             for nm in myzip.namelist():
                 print "Now processing file: " + nm
                 obj = myzip.open(nm)
-                portfolio_bucket.upload_fileobj(obj, nm, ExtraArgs={'ContentType': mimetypes.guess_type(nm)[0]})
-                portfolio_bucket.Object(nm).Acl().put(ACL='public-read')
+                if nm == "index.html":                          # add specific metadata
+                    portfolio_bucket.upload_fileobj(obj, nm, ExtraArgs={'ContentType': 'text/html;charset=utf-8'})
+                else:
+                    portfolio_bucket.upload_fileobj(obj, nm, ExtraArgs={'ContentType': mimetypes.guess_type(nm)[0]})
+
+                portfolio_bucket.Object(nm).Acl().put(ACL='public-read')    # Make World readable
 
         # Update logs
 
         print "Portfolio Lambda Function complete"
 
-        # Now update SNS Topic
-
-        topic.publish(Subject="Portfolio Deployed", Message="Deployed Successfully!")
-
-        # Now Update CodePipeline
+        # Update CodePipeline if applicable
 
         if job:
             codepipeline = boto3.client('codepipeline')
             codepipeline.put_job_success_result(jobId=job["id"])
+
+        # Update SNS Topic if everything worked as expected
+
+        topic.publish(Subject="Portfolio Deployed", Message="Deployed Successfully!")
 
     # If code experiences an error, publish to SNS and raise as exception error
 
