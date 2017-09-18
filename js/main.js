@@ -32,6 +32,16 @@ const myWork = [
       'src': "images/example_3.jpg",
       'comment': ""
     }
+  },
+    {
+      'title': "Boto3 Utils",
+      'href': "https://github.com/mikeoc61/Boto3",
+      'desc': "Collection of Python language utilities utilizing the AWS Boto3 SDK",
+      'image': {
+        'desc': "AWS Boto3 Python Utils",
+        'src': "images/AWS_logo.jpg",
+        'comment': ""
+      }
   }
 ]
 
