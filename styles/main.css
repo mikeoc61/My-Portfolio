@@ -83,7 +83,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .section {
   font-size: 4.2rem;
-  min-height: 60vh;
+  min-height: 50vh;
   position: relative;
   padding-top: 5rem;
   padding-bottom: 5rem;
@@ -162,7 +162,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .section--social {
   float: right;
-  line-height: 10rem;
+  line-height: 12rem;
   margin-right: 2rem;
 }
 
@@ -176,7 +176,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .socialWrapper {
   display: inline-block;
-  font-size: 5rem;
+  font-size: 6rem;
 }
 
 
@@ -204,7 +204,7 @@ h1, h2, h3, h4, h5, h6 {
   position: absolute;
   right: 2rem;
   top: 5rem;
-  font-size: 4rem;
+  font-size: 5rem;
   z-index: 1;
   curson: pointer;
 }
