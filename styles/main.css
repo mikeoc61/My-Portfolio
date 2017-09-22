@@ -51,7 +51,7 @@
 */
 
 html {
-  font-size: 62.5%;
+  font-size: 50%;
 }
 
 body {
@@ -83,7 +83,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .section {
   font-size: 4.2rem;
-  min-height: 50vh;
+  min-height: 30vh;
   position: relative;
   padding-top: 5rem;
   padding-bottom: 5rem;
