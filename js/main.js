@@ -34,11 +34,11 @@ const myWork = [
     }
   },
     {
-      'title': "Boto3 Utils",
-      'href': "https://github.com/mikeoc61/Boto3",
-      'desc': "Collection of Python language utilities utilizing the AWS Boto3 SDK",
+      'title': "Python3 URL Monitor",
+      'href': "https://github.com/mikeoc61/Web_Site_Monitor",
+      'desc': "Monitors a specific URL for availability, latency and for change by computing and comparing a SHA1 hash. If configured, program also uses AWS boto3 to provide alerts via SNS and prompts use for AWS Profile and Mobile #",
       'image': {
-        'desc': "AWS Boto3 Python Utils",
+        'desc': "URL Monitor with AWS SNS integration",
         'src': "images/AWS_logo.jpg",
         'comment': ""
       }
