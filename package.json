@@ -35,12 +35,14 @@
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
     "enzyme": "^2.9.1",
-    "fsevents": "^1.2.4",
     "jest": "^21.1.0",
     "jest-cli": "^21.1.0",
     "react-addons-test-utils": "^15.6.0",
     "react-test-render": "^1.1.1",
     "react-test-renderer": "^15.6.1",
     "webpack": "^3.5.6"
+  }
+  "optionalDependencies": {
+      "fsevents": "^1.2.4",
   }
 }
