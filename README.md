@@ -2,7 +2,7 @@
 
 This is my professional portfolio. It uses AWS and ReactJS
 
-Project is based on the ACloudGuru Class entitled: 
+Project is based on the ACloudGuru Class entitled:
 
 	"Create a Serverless Portfolio with AWS and React"
 
@@ -16,11 +16,13 @@ Project is based on the ACloudGuru Class entitled:
 
 - HTML, CSS, Font Awesome, Google Fonts
 
-- React NPM webpack babel jest
+- React, NPM, webpack, babel, jest
 
 ## Deployment
 
-Project can be deployed locally or using AWS Serverless technology as described in the class.
+Project can be deployed locally or using AWS Serverless technology.
 In my case, this project is deployed as the source content for https://portfolio.mikeoc.me.
-AWS CodePipeline is used to monitor the Github project for updates and then to invoke Codebuild
+AWS CodePipeline monitors the Github project for any updates and then invokes AWS Codebuild
 and Lambda to deploy the project content to an AWS S3 bucket which is published by AWS CloudFront.
+
+Note: since this code was developed on MacOS, I've ommited package-lock.json so that automatic builds on Linux at AWS as part of the deployment pipeline will not choke on MacOS specific dependencies such as as the fsevents package.
