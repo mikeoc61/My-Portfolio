@@ -3,7 +3,7 @@ version: 0.1
 phases:
   pre_build:
     commands:
-      - npm install
+      - npm install --no-optional
       - npm test
   build:
     commands:
