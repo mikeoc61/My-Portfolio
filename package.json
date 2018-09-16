@@ -43,6 +43,6 @@
     "webpack": "^3.5.6"
   },
   "optionalDependencies": {
-      "fsevents": "^1.2.4",
+    "fsevents": "^1.2.4"
   }
 }
