@@ -81,9 +81,11 @@ h1, h2, h3, h4, h5, h6 {
   Sections
 */
 
+/* Controls height of section block */
+
 .section {
   font-size: 4.2rem;
-  min-height: 30vh;
+  min-height: 10vh;
   position: relative;
   padding-top: 5rem;
   padding-bottom: 5rem;
@@ -112,11 +114,13 @@ h1, h2, h3, h4, h5, h6 {
   transform: translate(-50%, -50%);
 }
 
+/* Controls size of example circles */
+
 .section__exampleWrapper,
 .section__example {
   display: inline-block;
-  height: 35rem;
-  width: 35rem;
+  height: 25rem;
+  width: 25rem;
 }
 
 .section__exampleWrapper {
@@ -136,15 +140,17 @@ h1, h2, h3, h4, h5, h6 {
   height: 34rem;
 }
 
+/* Control Project Text size inside of circle */
+
 .section__exampleTitle{
-  font-size: 3.4rem;
+  font-size: 3.0rem;
   text-align: center;
   text-transform: uppercase;
   width: 90%;
 }
 
 .section__exampleImage {
-  opacity: 0.25;
+  opacity: 0.30;
   width: 250%;
   margin-left: -50%;
   margin-top: -50%;

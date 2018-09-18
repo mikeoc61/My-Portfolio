@@ -2,17 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import ExampleWork from './example-work'
 
+/*
+Note: need to run "npm run webpack" for any changes to be visible
+*/
+
 const myWork = [
-  {
-    'title': "GetMacs Python Project",
-    'href': "https://github.com/mikeoc61/GetMacs",
-    'desc': "Simple Python function to scan a /24 address range and report MAC addresses for valid IPs.",
-    'image': {
-      'desc': "GetMacs Python Project",
-      'src': "images/example_1.jpg",
-      'comment': ""
-    }
-  },
   {
     'title': "Dynamic Serverless Portfolio",
     'href': "https://github.com/mikeoc61/My-Portfolio",
@@ -24,6 +18,17 @@ const myWork = [
     }
   },
   {
+    'title': "GetMacs Python Project",
+    'href': "https://github.com/mikeoc61/GetMacs",
+    'desc': "Simple Python function to scan a /24 address range and report MAC addresses for valid IPs.",
+    'image': {
+      'desc': "GetMacs Python Project",
+      'src': "images/example_1.jpg",
+      'comment': ""
+    }
+  },
+
+  {
     'title': "AWS Button / IFTTT",
     'href': "https://github.com/mikeoc61/IFTTT-Stuff",
     'desc': "Code used to integrate linux shell or AWS IoT Button (via AWS Lambda) with IFTTT, typically for home automation",
@@ -34,7 +39,7 @@ const myWork = [
     }
   },
     {
-      'title': "Python3 URL Monitor",
+      'title': "URL Monitor",
       'href': "https://github.com/mikeoc61/Web_Site_Monitor",
       'desc': "Monitors a specific URL for availability, latency and for change by computing and comparing a SHA1 hash. If configured, program also uses AWS boto3 to provide alerts via SNS and prompts use for AWS Profile and Mobile #",
       'image': {
