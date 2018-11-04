@@ -18,6 +18,16 @@ const myWork = [
     }
   },
   {
+    'title': "Seismic Activity",
+    'href': "https://github.com/mikeoc61/Seismic-Reporting.git",
+    'desc': "Queries USGS Earthquake data and lists events sorted by increasing distance from specified longitude and latitude",
+    'image': {
+      'desc': "Query USGS Data",
+      'src': "images/quakes_code.jpg",
+      'comment': ""
+    }
+  },
+  {
     'title': "AWS Button / IFTTT",
     'href': "https://github.com/mikeoc61/IFTTT-Stuff",
     'desc': "Code used to integrate linux shell or AWS IoT Button (via AWS Lambda) with IFTTT, typically for home automation",
