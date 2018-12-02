@@ -18,6 +18,16 @@ const myWork = [
     }
   },
   {
+    'title': "Currency Monitor",
+    'href': "https://github.com/mikeoc61/currency_monitor",
+    'desc': "Monitors basket of foreign currencies for changes relative to USD and displays color coded changes on console",
+    'image': {
+      'desc': "A Serverless Portfolio",
+      'src': "images/currency.jpg",
+      'comment': ""
+    }
+  },
+  {
     'title': "Seismic Activity",
     'href': "https://github.com/mikeoc61/Seismic-Reporting.git",
     'desc': "Queries USGS Earthquake data and lists events sorted by increasing distance from specified longitude and latitude",
@@ -38,7 +48,7 @@ const myWork = [
     }
   },
   {
-    'title': "URL Monitor",
+    'title': "Web Site Monitor",
       'href': "https://github.com/mikeoc61/Web_Site_Monitor",
       'desc': "Monitors a specific URL for availability, latency and for change by computing and comparing a SHA1 hash. If configured, program also uses AWS boto3 to provide alerts via SNS and prompts use for AWS Profile and Mobile #",
       'image': {
