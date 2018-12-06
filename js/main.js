@@ -30,7 +30,7 @@ const myWork = [
   {
     'title': "Seismic Activity",
     'href': "https://github.com/mikeoc61/Seismic-Reporting.git",
-    'desc': "Queries USGS Earthquake data and lists events sorted by increasing distance from specified longitude and latitude",
+    'desc': "Queries USGS Earthquake data and lists events sorted by increasing distance from specified longitude and latitude.",
     'image': {
       'desc': "Query USGS Data",
       'src': "images/quakes_code.jpg",
@@ -38,9 +38,19 @@ const myWork = [
     }
   },
   {
+    'title': "AWS Lambda Event Handler",
+    'href': "https://github.com/mikeoc61/aws-lambda-get-event-detail.git",
+    'desc': "AWS Lambda event handler that queries information about the function execution environment and returns that information nicely formatted as a web page.",
+    'image': {
+      'desc': "Lambda Event Handler",
+      'src': "images/Lambda_events.jpg",
+      'comment': ""
+    }
+  },
+  {
     'title': "AWS Button / IFTTT",
     'href': "https://github.com/mikeoc61/IFTTT-Stuff",
-    'desc': "Code used to integrate linux shell or AWS IoT Button (via AWS Lambda) with IFTTT, typically for home automation",
+    'desc': "Code used to integrate linux shell or AWS IoT Button (via AWS Lambda) with IFTTT, typically for home automation.",
     'image': {
       'desc': "AWS IoT IFTTT Code",
       'src': "images/example_3.jpg",
@@ -50,22 +60,12 @@ const myWork = [
   {
     'title': "Web Site Monitor",
       'href': "https://github.com/mikeoc61/Web_Site_Monitor",
-      'desc': "Monitors a specific URL for availability, latency and for change by computing and comparing a SHA1 hash. If configured, program also uses AWS boto3 to provide alerts via SNS and prompts use for AWS Profile and Mobile #",
+      'desc': "Monitors the specified URL for availability, latency and for change by computing and comparing a SHA1 hash. If configured, program also uses AWS boto3 to provide alerts via SNS and prompts use for AWS Profile and Mobile #. Both command line and GUI version are provided with the GUI developed using the tkinter module",
       'image': {
         'desc': "URL Monitor with AWS SNS integration",
         'src': "images/AWS_logo.jpg",
         'comment': ""
       }
-  },
-    {
-    'title': "GetMacs",
-    'href': "https://github.com/mikeoc61/GetMacs",
-    'desc': "Simple Python function to scan a /24 address range and report corresponding MAC addresses for valid IPs.",
-    'image': {
-      'desc': "GetMacs Python Project",
-      'src': "images/example_1.jpg",
-      'comment': ""
-    }
   }
 ]
 
