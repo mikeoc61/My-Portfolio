@@ -43,7 +43,7 @@ const myWork = [
     'desc': "AWS Lambda event handler that queries information about the function execution environment and returns that information nicely formatted as a web page.",
     'image': {
       'desc': "Lambda Event Handler",
-      'src': "images/Lambda_events.jpg",
+      'src': "images/Lambda_Events.jpg",
       'comment': ""
     }
   },
