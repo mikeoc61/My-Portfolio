@@ -20,7 +20,7 @@ const myWork = [
   {
     'title': "Currency Monitor",
     'href': "https://github.com/mikeoc61/currency_monitor",
-    'desc': "Monitors basket of foreign currencies for changes relative to USD and displays color coded changes on console",
+    'desc': "Monitors basket of foreign currencies for changes relative to USD and displays color coded changes on console. Utilizes DyanmoDB as a persistent datastore so that current rates can be compared with saved rates and change can be calculaed. Also utilizes S3 and CloudFront CDN to store static CSS and Header HTML.",
     'image': {
       'desc': "A Serverless Portfolio",
       'src': "images/currency.jpg",
