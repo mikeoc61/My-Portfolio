@@ -62,7 +62,7 @@
 */
 
 html {
-  font-size: 50%;
+  font-size: 45%;
 }
 
 body {
@@ -153,11 +153,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .section__exampleWrapper {
-  margin-right: 4rem;
+  margin: 1.5rem;
 }
 
 .section__example {
-  border-radius: 100%;
   cursor: pointer;
   overflow: hidden;
   position: relative;
@@ -179,7 +178,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .section__exampleImage {
-  opacity: 0.30;
+  opacity: 0.40;
   width: 250%;
   margin-left: -50%;
   margin-top: -50%;
