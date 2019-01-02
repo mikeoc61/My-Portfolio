@@ -98,7 +98,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Controls height of section block */
 
 .section {
-  font-size: 4.2rem;
+  font-size: 4.5rem;
   min-height: 7vh;
   position: relative;
   padding-top: 4rem;
@@ -119,7 +119,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .section--description {
-  font-size: 2.5rem;
+  font-size: 2.9rem;
   padding-left: 3rem;
   padding-right: 3rem;
   margin: 2rem 2rem;
@@ -226,12 +226,12 @@ h1, h2, h3, h4, h5, h6 {
 .modal--open {
   display: block;
   position: fixed;
-  top: 0;
+  top: 20;
   right: 0;
   left: 0;
   bottom: 0;
   width: 100%;
-  height: 100%;
+  height: 85%;
   z-index: 100;
 }
 
@@ -240,7 +240,7 @@ h1, h2, h3, h4, h5, h6 {
   right: 2rem;
   top: 5rem;
   font-size: 5rem;
-  z-index: 1;
+  z-index: 10;
   curson: pointer;
 }
 
@@ -248,7 +248,7 @@ h1, h2, h3, h4, h5, h6 {
   position: absolute;
   top: 0;
   left: 0;
-  font-size: 2.4rem;
+  font-size: 3.2rem;
   padding: 2rem;
   width: 66%;
 }
