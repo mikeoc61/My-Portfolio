@@ -1,27 +1,22 @@
 # Michael O'Connor's portfolio
 
-This is my professional portfolio. It uses AWS and ReactJS
-
-Project is based on the ACloudGuru Class entitled:
-
-	"Create a Serverless Portfolio with AWS and React"
+This is my professional software development portfolio.
 
 ## Technologies used
 
-- Brew (Mac package manager)
+- Python
 
-- python and ipython
-
-- Git and github
+- Git and GitHub
 
 - HTML, CSS, Font Awesome, Google Fonts
 
 - React, NPM, webpack, babel, jest
 
+- AWS: S3, Lambda, Codebuild, Codepipeline, Cloudfront
+
 ## Deployment
 
-Project can be deployed locally or using AWS Serverless technology.
-In my case, this project is deployed as the source content for https://portfolio.mikeoc.me.
+This project is deployed as the source content for https://portfolio.mikeoc.me.
 AWS CodePipeline regularly monitors the Github project for any updates and then invokes
 AWS Codebuild and Lambda to pull, build, test and deploy the project content to an AWS S3
 bucket.
