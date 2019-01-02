@@ -18,11 +18,11 @@ const myWork = [
     }
   },
   {
-    'title': "Currency Monitor",
+    'title': "Currency Exchange",
     'href': "https://github.com/mikeoc61/currency_monitor",
-    'desc': "Python programs implemented as command line and AWS Lambda functions which monitor a basket of foreign currencies for changes relative to USD. Utilizes AWS DynamoDB as a persistent datastore so that current rates can be compared with saved rates and change percentage can be calculated. Utilizes AWS S3 Storage and CloudFront CDN for CSS and Header HTML content.",
+    'desc': "Python programs implemented which monitor a basket of foreign currencies for changes relative to USD. Utilizes AWS DynamoDB as a persistent datastore so that current rates can be compared with saved rates and change percentage can be calculated. Utilizes AWS S3 Storage and CloudFront CDN for CSS and Header HTML content.",
     'image': {
-      'desc': "A Serverless Portfolio",
+      'desc': "Serverless Currency Rate Tracker",
       'src': "images/currency.jpg",
       'comment': ""
     }
@@ -32,17 +32,17 @@ const myWork = [
     'href': "https://github.com/mikeoc61/Seismic-Reporting.git",
     'desc': "Queries USGS Earthquake data and lists events sorted by increasing distance from specified longitude and latitude.",
     'image': {
-      'desc': "Query USGS Data",
+      'desc': "Query and Sort USGS Data",
       'src': "images/quakes_code.jpg",
       'comment': ""
     }
   },
   {
-    'title': "AWS Lambda Event Handler",
+    'title': "Lambda Event Detail",
     'href': "https://github.com/mikeoc61/aws-lambda-get-event-detail.git",
     'desc': "AWS Lambda event handler that queries information about the function execution environment and returns that information nicely formatted as a web page.",
     'image': {
-      'desc': "Lambda Event Handler",
+      'desc': "Lambda Event Detail",
       'src': "images/Lambda_Events.jpg",
       'comment': ""
     }
