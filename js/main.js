@@ -20,7 +20,7 @@ const myWork = [
   {
     'title': "Currency Exchange",
     'href': "https://github.com/mikeoc61/currency_monitor",
-    'desc': "Python programs implemented which monitor a basket of foreign currencies for changes relative to USD. Utilizes AWS DynamoDB as a persistent datastore so that current rates can be compared with saved rates and change percentage can be calculated. Utilizes AWS S3 Storage and CloudFront CDN for CSS and Header HTML content.",
+    'desc': "Python programs which monitor a basket of foreign currencies for changes relative to USD. Utilizes AWS DynamoDB as a persistent datastore so that current rates can be compared with saved rates and change percentage can be calculated. Utilizes AWS S3 Storage and CloudFront CDN for CSS and Header HTML content.",
     'image': {
       'desc': "Serverless Currency Rate Tracker",
       'src': "images/currency.jpg",
