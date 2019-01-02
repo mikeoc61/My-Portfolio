@@ -67,7 +67,7 @@ html {
 }
 
 body {
-  font-family: 'Cardo', serif;
+  font-family: 'Arial', serif;
   background-color: #d9d9d9;
   margin: 0 auto;
   min-width: min-content;
@@ -111,7 +111,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .section--description {
-  font-size: 2rem;
+  font-size: 2.5rem;
   padding-left: 4.5rem;
   padding-right: 4.5rem;
   margin: 2rem 3rem;
