@@ -31,9 +31,8 @@
   border-color: #ccc;
   border-width: 2px;
   border-style: solid;
-/*  border: 2px solid #ccc; */
   border-radius: 5px;
-/*  margin: 10px 5px; */
+  margin: 10px 5px;
 }
 
 .color--skyBlue {
@@ -67,7 +66,7 @@ html {
 }
 
 body {
-  font-family: 'Arial', serif;
+  font-family: 'Cambria', serif;
   background-color: #d9d9d9;
   margin: 0 auto;
   min-width: min-content;
@@ -100,28 +99,37 @@ h1, h2, h3, h4, h5, h6 {
 
 .section {
   font-size: 4.2rem;
-  min-height: 10vh;
+  min-height: 7vh;
   position: relative;
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 }
 
 .section--alignCentered {
   text-align: center;
 }
 
+.section--alignLeft {
+  text-align: left;
+}
+
+.section--alignFull {
+  text-align: justify;
+  hyphens:auto;
+}
+
 .section--description {
   font-size: 2.5rem;
-  padding-left: 4.5rem;
-  padding-right: 4.5rem;
-  margin: 2rem 3rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  margin: 2rem 2rem;
 }
 
 .section__description {
   margin: 0 auto;
-  margin-bottom: 2rem;
-  width: 85%;
-  padding: 2rem
+  margin-bottom: 1rem;
+  width: 95%;
+  padding: 1rem
 }
 
 .section__text--centered {
