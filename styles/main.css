@@ -68,7 +68,10 @@ html {
 
 body {
   font-family: 'Cardo', serif;
-  margin: 0;
+  background-color: #d9d9d9;
+  margin: 0 auto;
+  min-width: min-content;
+  min-height: min-content;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -182,6 +185,7 @@ h1, h2, h3, h4, h5, h6 {
   float: left;
   font-size: 5rem;
   margin-left: 2rem;
+  word-wrap: normal;
 }
 
 .section--social {
