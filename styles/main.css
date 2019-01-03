@@ -67,8 +67,8 @@ html {
 
 body {
   font-family: 'Cambria', serif;
-  background-color: #d9d9d9;
-  margin: 0 auto;
+  background-color: #e5e5e5;
+/*  margin: 0 auto; */
   min-width: min-content;
   min-height: min-content;
 }
@@ -76,6 +76,16 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Montserrat', sans-serif;
   letter-spacing: .1rem;
+}
+
+a:link {
+  color: rgb(52, 152, 219);
+  text-decoration: none;
+}
+
+a:visited {
+  color: #3445db;
+  text-shadow: 1px 1px 2px black;
 }
 
 /*
@@ -101,8 +111,8 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 4.5rem;
   min-height: 7vh;
   position: relative;
-  padding-top: 4rem;
-  padding-bottom: 4rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .section--alignCentered {
@@ -123,6 +133,8 @@ h1, h2, h3, h4, h5, h6 {
   padding-left: 3rem;
   padding-right: 3rem;
   margin: 2rem 2rem;
+  outline-style: solid;
+  outline-width: 1px;
 }
 
 .section__description {
