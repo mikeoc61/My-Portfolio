@@ -3,6 +3,9 @@ import ReactDOM from 'react-dom';
 import ExampleWork from './example-work'
 
 /*
+This code controls content displayed when clicking on a Portfolio
+project sample as well as the background image used on the main page. 
+
 Note: need to run "npm run webpack" for any changes to be visible
 */
 
@@ -27,7 +30,11 @@ const myWork = [
   {
     'title': "Currency Exchange",
     'href': "https://github.com/mikeoc61/currency_monitor",
-    'desc': "Python programs which monitor a basket of foreign currencies for changes relative to USD. Utilizes AWS DynamoDB as a persistent datastore so that current rates can be compared with saved rates and change percentage can be calculated. Utilizes AWS S3 Storage and CloudFront CDN for CSS and Header HTML content.",
+    'desc': "Python programs which monitor a basket of foreign currencies for \
+             changes relative to USD. Utilizes AWS DynamoDB as a persistent \
+             datastore so that current rates can be compared with saved rates \
+             and change percentage can be calculated. Utilizes AWS S3 Storage \
+             and CloudFront CDN for CSS and Header HTML content.",
     'image': {
       'desc': "Serverless Currency Rate Tracker",
       'src': "images/currency.jpg",
@@ -37,7 +44,9 @@ const myWork = [
   {
     'title': "Seismic Activity",
     'href': "https://github.com/mikeoc61/Seismic-Reporting.git",
-    'desc': "Queries USGS Earthquake data and lists events sorted by increasing distance from specified longitude and latitude.",
+    'desc': "Queries USGS Earthquake data over the past day, week or month \
+             and lists seismic events sorted by magnitude, name or \
+             distance from users IP based longitude and latitude.",
     'image': {
       'desc': "Query and Sort USGS Data",
       'src': "images/quakes_code.jpg",
@@ -47,7 +56,9 @@ const myWork = [
   {
     'title': "Lambda Event Detail",
     'href': "https://github.com/mikeoc61/aws-lambda-get-event-detail.git",
-    'desc': "AWS Lambda event handler that queries information about the function execution environment and returns that information nicely formatted as a web page.",
+    'desc': "AWS Lambda event handler that queries information about the \
+             function's execution environment and returns that information \
+             nicely formatted as a web page.",
     'image': {
       'desc': "Lambda Event Detail",
       'src': "images/Lambda_Events.jpg",
@@ -57,7 +68,8 @@ const myWork = [
   {
     'title': "AWS Button / IFTTT",
     'href': "https://github.com/mikeoc61/IFTTT-Stuff",
-    'desc': "Code used to integrate linux shell or AWS IoT Button (via AWS Lambda) with IFTTT, typically for home automation.",
+    'desc': "Code used to integrate linux shell or AWS IoT Button \
+             (via AWS Lambda) with IFTTT, typically for home automation.",
     'image': {
       'desc': "AWS IoT IFTTT Code",
       'src': "images/example_3.jpg",
@@ -67,7 +79,12 @@ const myWork = [
   {
     'title': "Web Site Monitor",
       'href': "https://github.com/mikeoc61/Web_Site_Monitor",
-      'desc': "Monitors a specified URL for availability, latency and change by computing and comparing a SHA1 hash. If configured, program also uses AWS boto3 to provide alerts via SNS and prompts user for AWS Profile and Mobile #. Both command line and GUI version are provided. GUI developed using the tkinter module",
+      'desc': "Monitors a specified URL for availability, latency and \
+               change by computing and comparing a SHA1 hash. If configured, \
+               program also uses AWS boto3 to provide alerts via SNS and \
+               prompts user for AWS Profile and Mobile #. Both command line \
+               and GUI version are provided. GUI developed using the tkinter \
+               module",
       'image': {
         'desc': "URL Monitor with AWS SNS integration",
         'src': "images/AWS_logo.jpg",
