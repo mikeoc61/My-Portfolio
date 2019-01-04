@@ -60,7 +60,7 @@ const myWork = [
   {
     'title': "Web Site Monitor",
       'href': "https://github.com/mikeoc61/Web_Site_Monitor",
-      'desc': "Monitors the specified URL for availability, latency and for change by computing and comparing a SHA1 hash. If configured, program also uses AWS boto3 to provide alerts via SNS and prompts use for AWS Profile and Mobile #. Both command line and GUI version are provided with the GUI developed using the tkinter module",
+      'desc': "Monitors a specified URL for availability, latency and change by computing and comparing a SHA1 hash. If configured, program also uses AWS boto3 to provide alerts via SNS and prompts user for AWS Profile and Mobile #. Both command line and GUI version are provided. GUI developed using the tkinter module",
       'image': {
         'desc': "URL Monitor with AWS SNS integration",
         'src': "images/AWS_logo.jpg",
