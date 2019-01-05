@@ -161,8 +161,8 @@ a:visited {
 .section__exampleWrapper,
 .section__example {
   display: inline-block;
-  height: 25rem;
-  width:  25rem;
+  height: 20rem;
+  width:  20rem;
   border-color: black;
   border-width: 5px;
   border-radius: 90%;
@@ -179,7 +179,7 @@ a:visited {
 }
 
 .section__example:active {
-  transition: 0.05s all;
+  transition: 0.1s all;
   width: 34rem;
   height: 34rem;
 }
@@ -198,6 +198,8 @@ a:visited {
   width: 250%;
   margin-left: -50%;
   margin-top: -50%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /*
@@ -247,7 +249,7 @@ a:visited {
   left: 0;
   bottom: 0;
   width: 100%;
-  height: 85%;
+  height: 80%;
   z-index: 100;
 }
 
