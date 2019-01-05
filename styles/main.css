@@ -32,7 +32,7 @@
   border-width: 2px;
   border-style: solid;
   border-radius: 5px;
-  margin: 10px 5px;
+  margin: 20px 5px;
 }
 
 .color--skyBlue {
@@ -63,13 +63,17 @@
 
 html {
   font-size: 45%;
+  margin: 0;
+  padding: 0;
+  background-color: darkgrey;
 }
 
 body {
   font-family: 'Cambria', serif;
-  background-color: #e5e5e5;
-  margin: 0 auto;
-  min-width: 715px;
+  background: #e5e5e5;
+  margin: 0 50px;
+  width = 80%;
+  min-width: 740px;
   min-height: min-content;
 }
 
