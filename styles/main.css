@@ -62,18 +62,18 @@
 */
 
 html {
-  font-size: 45%;
+  font-size: 40%;
   margin: 0;
   padding: 0;
   background-color: darkgrey;
 }
 
 body {
-  font-family: 'Cambria', serif;
+  font-family: 'Alike', serif;
   background: #e5e5e5;
   margin: 0 50px;
   width = 80%;
-  min-width: 740px;
+  min-width: 640px;
   min-height: min-content;
 }
 
@@ -221,14 +221,14 @@ a:visited {
 .section__heading--largest {
   float: left;
   font-size: 5rem;
-  margin-left: 2rem;
+  margin-left: 1rem;
   word-wrap: normal;
 }
 
 .section--social {
   float: right;
-  line-height: 8.5rem;
-  margin-right: 2rem;
+  margin-top: 2rem;
+  margin-right: 1rem;
 }
 
 .social {
