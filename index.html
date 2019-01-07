@@ -1,22 +1,24 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
  <head>
     <meta charset="utf-8">
+    <!--
     <meta name="cache-control" content="no-cache,no-store,must-revalidate">
     <meta name="expires" content="-1">
+    -->
     <meta name="X-Permitted-Cross-Domain-Policies" content="master-only">
     <meta name="X-Frame-Options" content="sameorigin">
-    <meta name="Server" content="Serverless!!!">
-    <meta name="description" content="IT Professional Portfolio">
-    <meta name="keywords" content="aws,python,lambda,mikeoc,mikeoc61,gmikeoc@gmail.com,cissp">
+    <meta name="Server" content="AWS Lambda">
+    <meta name="description" content="Software Developer Portfolio">
+    <meta name="keywords" content="AWS,python,lambda,dynamoDB,serverless,mikeoc,mikeoc61,gmikeoc@gmail.com,cissp">
 
     <title>Michael O'Connor Portfolio</title>
     <link rel="stylesheet" href="styles/main.css"/>
 
     <!-- old font awesome 4
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
--->
+    -->
 
     <!-- Switched to using Font Awesome free CDN -->
 
@@ -28,11 +30,11 @@
   <body>
     <main class="overflow--auto">
       <span class="color--skyBlue section__heading--largest">
-        <h1 style="font-size: 5rem; margin-top: 2rem; margin-bottom: 0">
+        <p class="name">
         MICHAEL E. O'CONNOR
-        </h1>
-        <h2 style="font-size: 3rem; margin: 0">
-          CISSP, AWS-SAA
+        </p>
+        <h2 class="certs">
+          CISSP, AWS-SA
         </h2>
     </span>
 
@@ -87,7 +89,7 @@
      <strong>Welcome To My Portfolio</strong> <br><br> All projects included below, and a
      few more, are publicly hosted on GitHub. Click on individual project circles for
      summary descriptions and links to the code. Check out my LinkedIn profile,
-     GitHub & Docker Repositories and Resume using links on the top right
+     GitHub & Docker repositories and resume using links on the top right
      corner of this page. <br><br>This site is dynamically packaged and deployed
      using <A HREF="https://aws.amazon.com/lambda">AWS Lambda</A> and
      <A HREF="https://aws.amazon.com/codebuild">CodeBuild</A>. Content is
@@ -113,22 +115,26 @@
     <section class="section section--alignFull section--description">
       <p class="color--darkgrey section__description">
 	       I'm originally from the Midwest and moved to Northern CA after college.
-         Currently living in N. Texas near Frisco.
+         Currently living in N. Texas near Frisco. Over the years I've had the
+         pleasure of working for large established corporations such as Amdahl,
+         Sun Microsystems and Oracle as well as small start-ups like Rubrik.
          <br><br>
          I code primarily in Python 3 using Atom, Vim, Chrome and Visual Studio Code. Recently
          I've focused specifically on full-stack development leveraging a server-less approach with
          <A HREF="https://aws.amazon.com/lambda">AWS Lambda</A> wherever possible. This keeps
          operational considerations, as well as costs, minimal. When I need a persistent
-         datastore, I use <A HREF="https://aws.amazon.com/dynamodb">DynamoDB</A>.
+         datastore, I use <A HREF="https://aws.amazon.com/dynamodb">DynamoDB</A> or RDS.
          <br><br>
          I prefer Mac OSX and Linux for development and started programming on BSD UNIX
-         at <A HREF="https://engineering.purdue.edu/ECE">Purdue ECE</A>. I enjoy
-         hacking small single-board Linux based computers (Raspberry Pi) and integrating home
-         automation (Wink, LIFX, Nest, Sonos, etc.) with cloud based services.
+         at <A HREF="https://engineering.purdue.edu/ECE">Purdue ECE</A>. My Windows
+         experience is limited to end-user and home system administration. I enjoy
+         hacking small single-board Linux based computers (Raspberry Pi) and integrating
+         home automation (Wink, LIFX, Nest, Sonos, etc.) with cloud based services.
          <br><br>
-	       For fun I like traveling, running, skiing, motorcycles (currently a R1200RT),
+	       For fun I like running, skiing, motorcycles (currently a R1200RT),
          as well as playing and promoting <A HREF="http://segpolo.org/">Segway
-	       Polo</A>. Yes, that's actually a real thing.
+	       Polo</A>. Yes, that's actually a thing. I'd love to get a local team
+         organized in the N. Dallas area!
   	</section>
 
     <section class="section section--alignCentered">

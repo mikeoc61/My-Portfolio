@@ -82,6 +82,18 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: .1rem;
 }
 
+.name {
+  font-size: 5rem;
+  margin-top: 2rem;
+  margin-bottom: 0;
+}
+
+.certs {
+  font-size: 3rem;
+  font-style: normal;
+  margin: 0;
+}
+
 a:link {
   color: rgb(52, 152, 219);
   text-decoration: none;
