@@ -72,9 +72,9 @@ body {
   font-family: serif;
   background: #e5e5e5;
   margin: 0 auto;
-  width = 80%;
+  width: 90%;
   min-width: 630px;
-  max-width: 750px;
+  max-width: 900px;
   min-height: min-content;
 }
 
