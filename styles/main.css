@@ -200,6 +200,7 @@ a:visited {
   margin: 2rem 2rem;
   outline-style: solid;
   outline-width: 1px;
+  min-height: 220px;
 }
 
 .section__description {
