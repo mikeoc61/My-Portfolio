@@ -34,7 +34,13 @@
   border-radius: 4px;
 }
 
-/* added small black border */
+/* Border box fix */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
 
 .background--skyBlue {
   background-color: rgb(52, 152, 219);
@@ -108,9 +114,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .weak--text {
-  font-size: 2.5rem;
+  font-size: 2.4rem;
   font-weight: 200;
   font-style: oblique;
+  padding-top: 20px;
 }
 
 a:link {
@@ -144,7 +151,7 @@ a:visited {
 
 .section {
   font-size: 4.5rem;
-  min-height: 7vh;
+  min-height: 12vh;
   position: relative;
   padding-top: 2rem;
   padding-bottom: 2rem;
@@ -164,9 +171,9 @@ a:visited {
 }
 
 .section--description {
-  font-size: 2.9rem;
-  padding-left: 3rem;
-  padding-right: 3rem;
+  font-size: 2.8rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
   margin: 2rem 2rem;
   outline-style: solid;
   outline-width: 1px;
@@ -184,7 +191,7 @@ a:visited {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  padding: 4px
+  padding: 4px;
 }
 
 /* Controls size of example circles */
