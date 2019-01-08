@@ -254,9 +254,9 @@ a:visited {
 }
 
 .section__example:active {
-  transition: 0.1s all;
-  width: 34rem;
-  height: 34rem;
+  transition: 0.05s all;
+  width: 24rem;
+  height: 24rem;
 }
 
 /* Control Project Text size inside of circle */
@@ -264,7 +264,8 @@ a:visited {
 .section__exampleTitle {
   font-size: 3.0rem;
   text-align: center;
-  text-transform: uppercase;
+  font-weight: bold;
+/*  text-transform: uppercase; */
   width: 90%;
 }
 
@@ -299,7 +300,7 @@ a:visited {
   position: absolute;
   right: 5rem;
   top: 5rem;
-  font-size: 5rem;
+  font-size: 7rem;
   z-index: 10;
   cursor: pointer;
 }
