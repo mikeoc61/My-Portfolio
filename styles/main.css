@@ -20,26 +20,41 @@
     rgb(236, 240, 241)
 */
 
-#thumbnail {
-    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-  }
+/* Border box global fix */
 
-/* Add photo to left of introductory remarks */
-
-.headshot {
-  width: 160px;
-  float: left;
-  margin: 20px 20px 20px 5px;
-  border: 1px solid darkgrey;
-  border-radius: 4px;
-}
-
-/* Border box fix */
 html {
   box-sizing: border-box;
 }
 *, *:before, *:after {
   box-sizing: inherit;
+}
+
+/*
+  General Styles
+    These are styles to be inherited
+    through parent containers
+*/
+
+html {
+  font-size: 40%;
+  margin: 0;
+  padding: 0;
+  background-color: darkgrey;
+}
+
+body {
+  font-family: serif;
+  background: #e5e5e5;
+  margin: 0 auto;
+  width: 90%;
+  min-width: 630px;
+  max-width: 900px;
+  min-height: min-content;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: .2rem;
 }
 
 .background--skyBlue {
@@ -71,32 +86,48 @@ html {
   background-color: rgb(44, 62, 80);
 }
 
+/* Styles used in header section */
+
 /*
-  General Styles
-    These are styles to be inherited
-    through parent containers
+  Header
 */
 
-html {
-  font-size: 40%;
-  margin: 0;
-  padding: 0;
-  background-color: darkgrey;
+.section__heading--largest {
+  float: left;
+  font-size: 5rem;
+  margin-left: 1rem;
+  word-wrap: normal;
 }
 
-body {
-  font-family: serif;
-  background: #e5e5e5;
-  margin: 0 auto;
-  width: 90%;
-  min-width: 630px;
-  max-width: 900px;
-  min-height: min-content;
+.section--social {
+  float: right;
+  margin-top: 2rem;
+  margin-right: 1rem;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Montserrat', sans-serif;
-  letter-spacing: .2rem;
+.social {
+  margin-right: 0.75rem;
+}
+
+.socialWrapper:last-child .social {
+  margin-right: 0;
+}
+
+.socialWrapper {
+  display: inline-block;
+  font-size: 7rem;
+}
+
+/* Styles used in intro section */
+
+/* Add photo to left of introductory remarks */
+
+.headshot {
+  width: 180px;
+  float: left;
+  margin-right: 10px;
+  border: 1px solid darkgrey;
+  border-radius: 4px;
 }
 
 .name {
@@ -113,12 +144,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
 
-.weak--text {
-  font-size: 2.4rem;
-  font-weight: 200;
-  font-style: oblique;
-  padding-top: 30px;
-}
+/* Control link appearance */
 
 a:link {
   color: rgb(52, 152, 219);
@@ -130,9 +156,8 @@ a:visited {
   text-shadow: 1px 1px 2px black;
 }
 
-/*
-  Helpers
-*/
+/*  Helpers Styles */
+
 
 .margin--none {
   margin: 0;
@@ -143,9 +168,7 @@ a:visited {
 }
 
 
-/*
-  Sections
-*/
+/*  Sections */
 
 /* Controls height of section block */
 
@@ -194,6 +217,19 @@ a:visited {
   padding: 4px;
 }
 
+.section__footer {
+  position: relative;
+  padding: 2px 20px;
+  text-align: center;
+  margin: 10px 20px;
+}
+
+.weak--text {
+  font-size: 2.5rem;
+  font-weight: 200;
+  font-style: oblique;
+}
+
 /* Controls size of example circles */
 
 .section__exampleWrapper,
@@ -240,40 +276,7 @@ a:visited {
   margin-right: auto;
 }
 
-/*
-  Header
-*/
-
-.section__heading--largest {
-  float: left;
-  font-size: 5rem;
-  margin-left: 1rem;
-  word-wrap: normal;
-}
-
-.section--social {
-  float: right;
-  margin-top: 2rem;
-  margin-right: 1rem;
-}
-
-.social {
-  margin-right: 0.75rem;
-}
-
-.socialWrapper:last-child .social {
-  margin-right: 0;
-}
-
-.socialWrapper {
-  display: inline-block;
-  font-size: 7rem;
-}
-
-
-/*
-  Modal
-*/
+/*  Modal */
 
 .modal--closed {
   display: none;
@@ -320,3 +323,9 @@ a:visited {
 .modal__image {
   opacity: 0.15;
 }
+
+/* Provide a shadow box around a section */
+
+#thumbnail {
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  }
