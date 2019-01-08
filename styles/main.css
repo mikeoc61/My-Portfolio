@@ -24,6 +24,16 @@
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
   }
 
+/* Add photo to left of introductory remarks */
+
+.headshot {
+  width: 190px;
+  float: left;
+  margin: 20px 20px 20px 5px;
+  border: 2px solid black;
+  border-radius: 4px;
+}
+
 /* added small black border */
 
 .background--skyBlue {
