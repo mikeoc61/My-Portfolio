@@ -29,11 +29,7 @@ html {
   box-sizing: inherit;
 }
 
-/*
-  General Styles
-    These are styles to be inherited
-    through parent containers
-*/
+/*  General Styles */
 
 html {
   font-size: 40%;
@@ -47,7 +43,7 @@ body {
   background: #e5e5e5;
   margin: 0 auto;
   width: 90%;
-  min-width: 630px;
+  min-width: 680px;
   max-width: 900px;
   min-height: min-content;
 }
@@ -57,13 +53,10 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: .2rem;
 }
 
+/* Color specific styles */
+
 .background--skyBlue {
   background-color: rgb(52, 152, 219);
-  border-color: #ccc;
-  border-width: 2px;
-  border-style: solid;
-  border-radius: 5px;
-  margin: 20px 5px;
 }
 
 .color--skyBlue {
@@ -131,6 +124,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .name {
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: .2rem;
   font-size: 5rem;
   margin-top: 2rem;
   margin-bottom: 0;
@@ -138,6 +133,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .certs {
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: .2rem;
   font-size: 3rem;
   font-style: normal;
   font-weight: 300;
@@ -170,7 +167,7 @@ a:visited {
 
 /*  Sections */
 
-/* Controls height of section block */
+/* Controls appearance of Portfolio and About Me sections */
 
 .section {
   font-size: 4.5rem;
@@ -178,7 +175,14 @@ a:visited {
   position: relative;
   padding-top: 2rem;
   padding-bottom: 2rem;
+  border-color: #ccc;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 5px;
+  margin: 20px 5px;
 }
+
+/* Text alignment styles */
 
 .section--alignCentered {
   text-align: center;
@@ -190,25 +194,20 @@ a:visited {
 
 .section--alignFull {
   text-align: justify;
-  hyphens:auto;
+  hyphens: auto;
 }
+
+/* Controls appearance of Intro and About Me content */
 
 .section--description {
   font-size: 2.8rem;
   padding-left: 2rem;
   padding-right: 2rem;
   margin: 2rem 2rem;
-  outline-style: solid;
-  outline-width: 1px;
   min-height: 220px;
 }
 
-.section__description {
-  margin: 0 auto;
-  margin-bottom: 1rem;
-  width: 95%;
-  padding: 1rem
-}
+/* Controls About and Portfolio section separator content */
 
 .section__text--centered {
   position: absolute;
@@ -218,12 +217,23 @@ a:visited {
   padding: 4px;
 }
 
+/* Controls appearance of Contact Me section */
+
+.section__contact {
+  font-size: 3.5rem;
+  margin: 3rem;
+}
+
+/* Used for footer */
+
 .section__footer {
   position: relative;
   padding: 2px 20px;
   text-align: center;
   margin: 10px 20px;
 }
+
+/* Used for footer text */
 
 .weak--text {
   font-size: 2.5rem;
@@ -240,7 +250,7 @@ a:visited {
   width:  20rem;
   border-color: black;
   border-width: 5px;
-  border-radius: 90%;
+  border-radius: 50%;
 }
 
 .section__exampleWrapper {
@@ -262,10 +272,9 @@ a:visited {
 /* Control Project Text size inside of circle */
 
 .section__exampleTitle {
-  font-size: 3.0rem;
+  font-size: 3.5rem;
   text-align: center;
   font-weight: bold;
-/*  text-transform: uppercase; */
   width: 90%;
 }
 
