@@ -48,6 +48,19 @@ body {
   min-height: min-content;
 }
 
+nav {
+  font-size: 2.8rem;
+  text-align: center;
+  background: darkgrey;
+}
+
+nav a {
+  display: inline-block;
+  padding: 8px 15px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Montserrat', sans-serif;
   letter-spacing: .2rem;
@@ -80,10 +93,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Styles used in header section */
-
-/*
-  Header
-*/
 
 .section__heading--largest {
   float: left;
@@ -163,7 +172,6 @@ a:visited {
 .overflow--auto {
   overflow: auto;
 }
-
 
 /*  Sections */
 
@@ -335,7 +343,7 @@ a:visited {
   opacity: 0.15;
 }
 
-/* Provide a shadow box around a section */
+/* Use to provide a shadow box around a section */
 
 #thumbnail {
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
