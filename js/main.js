@@ -37,7 +37,7 @@ const myWork = [
              and CloudFront CDN for CSS and Header HTML content.",
     'image': {
       'desc': "Serverless Currency Rate Tracker",
-      'src': "images/currency.jpg",
+      'src': "images/CurrencyEx.jpg",
       'comment': ""
     }
   },
