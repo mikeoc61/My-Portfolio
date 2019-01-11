@@ -62,7 +62,7 @@ const myWork = [
              to be modified so that the integration response does not corrupt HTML",
     'image': {
       'desc': "Lambda Event Detail",
-      'src': "images/Lambda_Events.jpg",
+      'src': "images/Lambda_Events.png",
       'comment': ""
     }
   },

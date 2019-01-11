@@ -49,17 +49,18 @@ html {
 }
 
 body {
-  font-family: serif;
+  font-family: 'Noto Serif', serif;
   background: #e5e5e5;
   margin: 0 auto;
   width: 90%;
-  min-width: 660px;
+  min-width: 630px;
   max-width: 900px;
   min-height: min-content;
 }
 
 nav {
   font-size: 2.8rem;
+  font-weight: normal;
   text-align: center;
   /* background: darkgrey; */
   background: linear-gradient(rgba(169, 169, 169, 0.4), rgba(169, 169, 169, 0.9));
@@ -67,9 +68,30 @@ nav {
 
 nav a {
   display: inline-block;
-  padding: 10px 20px;
-  font-weight: 500;
+  padding: 10px 15px;
   text-transform: capitalize;
+}
+
+a:hover {
+  font-size: larger;
+}
+
+/* Control link appearance */
+
+a:link {
+  /* color: rgb(52, 152, 219); */
+  color: #3445db;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #C95D63;
+  text-shadow: 1px 1px 2px black;
+}
+
+nav a:link,
+nav a:visited {
+  color: #3445DB;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -143,7 +165,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .socialWrapper {
   display: inline-block;
-  font-size: 7rem;
+  font-size: 6rem;
 }
 
 /* Styles used in intro section */
@@ -160,9 +182,9 @@ h1, h2, h3, h4, h5, h6 {
 
 .name {
   font-family: 'Noto Serif', serif;
-  letter-spacing: .2rem;
-  font-weight: 900;
+  letter-spacing: .1rem;
   font-size: 5rem;
+  font-weight: bold;
   margin-top: 2rem;
   margin-bottom: 0;
   font-weight: 500;
@@ -173,21 +195,8 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: .2rem;
   font-size: 3rem;
   font-style: normal;
-  font-weight: 300;
+  font-weight: 400;
   margin: 0;
-}
-
-/* Control link appearance */
-
-a:link {
-  /* color: rgb(52, 152, 219); */
-  color: #C95D63;
-  text-decoration: none;
-}
-
-a:visited {
-  color: #3445db;
-  text-shadow: 1px 1px 2px black;
 }
 
 /*  Helpers Styles */
@@ -207,7 +216,7 @@ a:visited {
 
 .section {
   font-size: 4.5rem;
-  min-height: 12vh;
+  min-height: 10vh;
   position: relative;
   padding-top: 2rem;
   padding-bottom: 2rem;
@@ -236,7 +245,7 @@ a:visited {
 /* Controls appearance of Intro and About Me content */
 
 .section--description {
-  font-size: 2.8rem;
+  font-size: 2.4rem;
   padding-left: 2rem;
   padding-right: 2rem;
   margin: 2rem 2rem;
@@ -273,7 +282,7 @@ a:visited {
 /* Used for footer text */
 
 .weak--text {
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   font-weight: 200;
   font-style: oblique;
 }
@@ -316,7 +325,7 @@ a:visited {
 }
 
 .section__exampleImage {
-  opacity: 0.40;
+  opacity: 0.30;
   width: 250%;
   margin-left: -50%;
   margin-top: -50%;
