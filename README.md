@@ -24,7 +24,8 @@ bucket.
 Note: since this code was developed on MacOS, I've ommited package-lock.json so that automatic builds on Linux at AWS as part of the deployment pipeline will not choke on MacOS specific dependencies such as as the fsevents package.
 
 Following edits to this project, simply run:
-- "npm run webpack"
-- "git add <changed file(s)>"
-- "git commit -m "<what changed>"
-- "git push"
+
+> "git status"
+> "git add <changed file(s)>"
+> "git commit -m "<what changed>"
+> "git push"
