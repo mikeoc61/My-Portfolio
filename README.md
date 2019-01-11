@@ -25,7 +25,9 @@ Note: since this code was developed on MacOS, I've ommited package-lock.json so 
 
 Following edits to this project, simply run:
 
+```
 > "git status"
 > "git add <changed file(s)>"
-> "git commit -m "<what changed>"
+> "git commit -m "<brief description of change>"
 > "git push"
+```
