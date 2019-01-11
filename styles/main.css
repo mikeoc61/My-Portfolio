@@ -73,7 +73,7 @@ nav a {
 }
 
 a:hover {
-  font-size: larger;
+  font-weight: bolder;
 }
 
 /* Control link appearance */
