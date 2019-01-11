@@ -18,6 +18,15 @@
 
   Cloud
     rgb(236, 240, 241)
+
+  Indian Red
+    #C95D63
+
+  Cadmium Orange
+    #EE8434
+
+  Palantine Blue
+    #3445DB
 */
 
 /* Border box global fix */
@@ -25,6 +34,7 @@
 html {
   box-sizing: border-box;
 }
+
 *, *:before, *:after {
   box-sizing: inherit;
 }
@@ -43,7 +53,7 @@ body {
   background: #e5e5e5;
   margin: 0 auto;
   width: 90%;
-  min-width: 680px;
+  min-width: 660px;
   max-width: 900px;
   min-height: min-content;
 }
@@ -71,6 +81,21 @@ h1, h2, h3, h4, h5, h6 {
 
 .background--skyBlue {
   background-color: rgb(52, 152, 219);
+}
+
+.background--cadmium {
+  background-color: #EE8434;
+}
+
+.backgroundcolor--cadmium {
+  background-color: #EE8434;
+}
+
+.color--palintineBlue {
+  color: #3445DB;
+}
+.color--indianRed {
+  color: #C95D63;
 }
 
 .color--skyBlue {
@@ -134,8 +159,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .name {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Noto Serif', serif;
   letter-spacing: .2rem;
+  font-weight: 900;
   font-size: 5rem;
   margin-top: 2rem;
   margin-bottom: 0;
@@ -154,7 +180,8 @@ h1, h2, h3, h4, h5, h6 {
 /* Control link appearance */
 
 a:link {
-  color: rgb(52, 152, 219);
+  /* color: rgb(52, 152, 219); */
+  color: #C95D63;
   text-decoration: none;
 }
 
