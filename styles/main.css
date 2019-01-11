@@ -59,7 +59,7 @@ body {
 }
 
 nav {
-  font-size: 2.8rem;
+  font-size: 2.5rem;
   font-weight: normal;
   text-align: center;
   /* background: darkgrey; */
@@ -79,8 +79,7 @@ a:hover {
 /* Control link appearance */
 
 a:link {
-  /* color: rgb(52, 152, 219); */
-  color: #3445db;
+  color: #C95D63;
   text-decoration: none;
 }
 
@@ -97,6 +96,13 @@ nav a:visited {
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Montserrat', sans-serif;
   letter-spacing: .2rem;
+}
+
+/* FontAwesome fonts */
+
+.fas,
+.fab {
+  font-size: 6rem;
 }
 
 /* Color specific styles */
@@ -165,7 +171,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .socialWrapper {
   display: inline-block;
-  font-size: 6rem;
 }
 
 /* Styles used in intro section */
@@ -185,7 +190,7 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: .1rem;
   font-size: 5rem;
   font-weight: bold;
-  margin-top: 2rem;
+  margin-top: 1.5rem;
   margin-bottom: 0;
   font-weight: 500;
 }
@@ -265,7 +270,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Controls appearance of Contact Me section */
 
 .section__contact {
-  font-size: 3.5rem;
+  font-size: 3rem;
   margin: 3rem;
 }
 
