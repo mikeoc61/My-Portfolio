@@ -329,8 +329,8 @@ h1, h2, h3, h4, h5, h6 {
 .section__exampleWrapper,
 .section__example {
   display: inline-block;
-  height: 15vw;
-  width:  15vw;
+  height: 18vw;
+  width:  18vw;
   border-color: black;
   border-width: 5px;
   border-radius: 50%;
