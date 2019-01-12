@@ -53,8 +53,8 @@ body {
   background: #e5e5e5;
   margin: 0 auto;
   width: 90%;
-  min-width: 630px;
-  max-width: 900px;
+  /* min-width: 630px;
+  max-width: 900px; */
   min-height: min-content;
 }
 
@@ -68,7 +68,7 @@ nav {
 
 nav a {
   display: inline-block;
-  padding: 10px 15px;
+  padding: 10px 3vw;
   text-transform: capitalize;
 }
 
@@ -98,7 +98,30 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: .2rem;
 }
 
-/* FontAwesome fonts */
+/* Change appearance for smaller width devices */
+
+@media (max-width: 660px) {
+  html {
+    font-size: 35%;
+  }
+}
+
+@media (max-width: 590px) {
+  html {
+    font-size: 25%;
+  }
+  body {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  html {
+    font-size: 15%;
+  }
+}
+
+/* FontAwesome brands and fonts */
 
 .fas,
 .fab {
@@ -162,7 +185,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .social {
-  margin-right: 0.75rem;
+  margin-right: 0.5rem;
 }
 
 .socialWrapper:last-child .social {
@@ -178,16 +201,15 @@ h1, h2, h3, h4, h5, h6 {
 /* Add photo to left of introductory remarks */
 
 .headshot {
-  width: 180px;
+  width: 18vw;
   float: left;
-  margin-right: 10px;
+  margin-right: 1rem;
   border: 1px solid darkgrey;
   border-radius: 4px;
 }
 
 .name {
   font-family: 'Noto Serif', serif;
-  letter-spacing: .1rem;
   font-size: 5rem;
   font-weight: bold;
   margin-top: 1.5rem;
@@ -223,7 +245,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 4.5rem;
   min-height: 10vh;
   position: relative;
-  padding-top: 2rem;
+  padding-top: 1rem;
   padding-bottom: 2rem;
   border-color: #ccc;
   border-width: 2px;
@@ -232,6 +254,9 @@ h1, h2, h3, h4, h5, h6 {
   margin: 20px 5px;
 }
 
+.background--red {
+  background: red;
+}
 /* Text alignment styles */
 
 .section--alignCentered {
@@ -251,10 +276,17 @@ h1, h2, h3, h4, h5, h6 {
 
 .section--description {
   font-size: 2.4rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
   margin: 2rem 2rem;
-  min-height: 220px;
+  min-height: 20vw;
+}
+
+.section--photo {
+  padding: .5vw;
+  margin: 1vw;
+  min-height: 20vw;
+  width: 20vw;
 }
 
 /* Controls About and Portfolio section separator content */
@@ -297,8 +329,8 @@ h1, h2, h3, h4, h5, h6 {
 .section__exampleWrapper,
 .section__example {
   display: inline-block;
-  height: 20rem;
-  width:  20rem;
+  height: 15vw;
+  width:  15vw;
   border-color: black;
   border-width: 5px;
   border-radius: 50%;
@@ -316,14 +348,14 @@ h1, h2, h3, h4, h5, h6 {
 
 .section__example:active {
   transition: 0.05s all;
-  width: 24rem;
-  height: 24rem;
+  width: 24vw;
+  height: 24vw;
 }
 
 /* Control Project Text size inside of circle */
 
 .section__exampleTitle {
-  font-size: 3.5rem;
+  font-size: 2.2vw;
   text-align: center;
   font-weight: bold;
   width: 90%;
