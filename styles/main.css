@@ -72,10 +72,6 @@ nav a {
   text-transform: capitalize;
 }
 
-a:hover {
-  font-weight: bolder;
-}
-
 /* Control link appearance */
 
 a:link {
@@ -85,7 +81,14 @@ a:link {
 
 a:visited {
   color: #C95D63;
-  text-shadow: 1px 1px 2px black;
+  /* text-shadow: 1px 1px 2px black; */
+}
+
+a:hover {
+  font-weight: bolder;
+  /* font-style: oblique; */
+  text-decoration: underline;
+  /* color: #EE8434; */
 }
 
 nav a:link,
@@ -309,6 +312,8 @@ h1, h2, h3, h4, h5, h6 {
 /* Used for footer */
 
 .section__footer {
+  font-size: 2.2rem;
+  font-style: oblique;
   position: relative;
   padding: 2px 20px;
   text-align: center;
@@ -320,7 +325,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .weak--text {
   font-size: 2.2rem;
-  font-weight: 200;
   font-style: oblique;
 }
 
@@ -346,10 +350,16 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
 }
 
-.section__example:active {
+/* .section__example:active {
   transition: 0.05s all;
   width: 24vw;
   height: 24vw;
+} */
+
+.section__example:hover {
+  transition: 0.2s all;
+  width: 20vw;
+  height: 20vw;
 }
 
 /* Control Project Text size inside of circle */
