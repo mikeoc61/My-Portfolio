@@ -306,7 +306,12 @@ h1, h2, h3, h4, h5, h6 {
 
 .section__contact {
   font-size: 3rem;
-  margin: 3rem;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+
+.contact__header {
+  margin-bottom: 0;
 }
 
 /* Used for footer */
