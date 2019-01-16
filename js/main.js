@@ -57,9 +57,10 @@ const myWork = [
     'title': "Lambda Event Detail",
     'href': "https://github.com/mikeoc61/aws-lambda-get-event-detail.git",
     'desc': "AWS Lambda event handler that returns detailed information about the \
-             function's execution environment as a nicely formatted as a web page. \
-             Since Lambda is returning HTML vs. standard JSON, API Gateway needs \
-             to be modified so that the integration response does not corrupt HTML",
+             function's execution environment as a nicely formatted web page. \
+             Since Lambda is returning HTML vs. standard JSON, API Gateway's default \
+             behavior needs to be modified so that the integration response \
+             does not corrupt HTML",
     'image': {
       'desc': "Lambda Event Detail",
       'src': "images/Lambda_Events.png",
