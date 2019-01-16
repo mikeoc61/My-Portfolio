@@ -360,11 +360,12 @@ h1, h2, h3, h4, h5, h6 {
 /* Used for footer section */
 
 .section__footer {
-  font-size: 2.2rem;
+  font-size: 2rem;
   font-style: oblique;
   text-align: center;
   padding: 2px 20px;
   margin: 5px 20px;
+  border-style: unset;
   border-radius: 9px;
   background: linear-gradient(rgba(169, 169, 169, 0.3), rgba(169, 169, 169, 0.7));
 }
