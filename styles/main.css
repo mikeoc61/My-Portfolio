@@ -56,6 +56,8 @@ body {
   min-height: min-content;
 }
 
+/* Navigation bar controls */
+
 nav {
   font-size: 2.5rem;
   font-weight: normal;
@@ -69,7 +71,7 @@ nav a {
   text-transform: capitalize;
 }
 
-/* Control link appearance */
+/* General link controls */
 
 a:link {
   color: #C95D63;
@@ -84,6 +86,8 @@ a:hover {
   font-weight: bolder;
   text-decoration: underline;
 }
+
+/* Nav specific link controls */
 
 nav a:link,
 nav a:visited {

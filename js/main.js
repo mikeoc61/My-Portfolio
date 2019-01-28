@@ -20,9 +20,9 @@ const myWork = [
              AWS CodeBuild. Lambda unpacks the finished product into an S3 bucket \
              which serves as the HTML root for my portfolio website \
              (https://portfolio.mikeoc.me). AWS SNS notifies me when the build \
-             completes and lets me know if the deployment was successful.",
+             completes and if the deployment was successful.",
     'image': {
-      'desc': "A Serverless Portfolio",
+      'desc': "Serverless Professional Portfolio",
       'src': "images/example_2.jpg",
       'comment': ""
     }
@@ -31,10 +31,11 @@ const myWork = [
     'title': "Currency Exchange Rates",
     'href': "https://github.com/mikeoc61/currency_monitor",
     'desc': "Python programs which monitor a basket of foreign currencies for \
-             changes relative to USD. Utilizes AWS DynamoDB as a persistent \
+             changes relative to USD. Utilizes Currency Layer service for \
+             latest exchange rate quotes and AWS DynamoDB as a persistent \
              datastore so that current rates can be compared with saved rates \
-             and change percentage can be calculated. Utilizes AWS S3 Storage \
-             and CloudFront CDN for CSS and Header HTML content.",
+             and change percentages can be calculated. Utilizes AWS S3 Storage \
+             and CloudFront CDN for CSS, Header and Footer HTML.",
     'image': {
       'desc': "Serverless Currency Rate Tracker",
       'src': "images/CurrencyEx.jpg",
@@ -46,9 +47,12 @@ const myWork = [
     'href': "https://github.com/mikeoc61/Seismic-Reporting.git",
     'desc': "Queries USGS Earthquake data collected over the past day, week \
              or month and lists seismic events sorted by magnitude, name or \
-             distance from the user's IP address based longitude and latitude.",
+             distance. Distance is determined by taking the user's IP address to \
+             identify local longitude and latitude and using the Haversine \
+             formula to calculate the distance between the user and event on \
+             the surface of a sphere.",
     'image': {
-      'desc': "Query and Sort USGS Data",
+      'desc': "Query and Sort USGS Earthquake Data",
       'src': "images/quakes_code.jpg",
       'comment': ""
     }
