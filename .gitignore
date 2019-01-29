@@ -65,3 +65,6 @@ typings/
 
 #
 dist
+
+# Directory to save backup copies of known working version
+save
