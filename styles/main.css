@@ -237,6 +237,9 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 4.6rem;
     margin-top: .4rem;
   }
+  h2 {
+    font-size: 1.4em;
+  }
 }
 
 /* Photo places to left of introductory text */
