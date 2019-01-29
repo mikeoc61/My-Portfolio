@@ -42,7 +42,7 @@ html {
 /*  General Styles */
 
 html {
-  font-size: 40%;
+  font-size: 45%;
   margin: 0;
   padding: 0;
   background-color: darkgrey;
@@ -61,7 +61,7 @@ body {
 /* Navigation bar controls */
 
 nav {
-  font-size: 2.5rem;
+  font-size: 2.8rem;
   font-weight: normal;
   text-align: center;
   background: linear-gradient(rgba(169, 169, 169, 0.4), rgba(169, 169, 169, 0.9));
@@ -98,7 +98,6 @@ nav a:visited {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Montserrat', sans-serif;
-  letter-spacing: .2rem;
 }
 
 /* FontAwesome brands and fonts */
@@ -209,9 +208,16 @@ h1, h2, h3, h4, h5, h6 {
     "photo my-text"
 }
 
-@media (max-width: 666px) {
+.welcome-head {
+  grid-area: welcome;
+  font-size: 4rem;
+  font-weight: bold;
+  /* align-self: start; */
+}
+
+@media (max-width: 725px) {
   html {
-    font-size: 35%;
+    font-size: 34%;
   }
   #welcome {
     grid-row-gap: 10px;
@@ -221,25 +227,16 @@ h1, h2, h3, h4, h5, h6 {
   }
   .welcome-head {
     margin: 0;
+    letter-spacing: .2rem;
+    font-size: 4.5rem;
   }
 }
 
-@media (max-width: 590px) {
-  html {
-    font-size: 32%;
-  }
+@media (max-width: 600px) {
   .fas, .fab {
-    font-size: 4.5rem;
+    font-size: 4.6rem;
     margin-top: .4rem;
   }
-}
-
-
-.welcome-head {
-  grid-area: welcome;
-  font-size: 4rem;
-  font-weight: bold;
-  /* align-self: start; */
 }
 
 /* Photo places to left of introductory text */
@@ -272,8 +269,8 @@ h1, h2, h3, h4, h5, h6 {
 /* Controls appearance of most sections so changes will have global impact */
 
 .section {
-  font-size: 4.5rem;
-  min-height: 10vh;
+  font-size: 4.0rem;
+  min-height: 6rem;
   position: relative;
   padding-top: 1rem;
   padding-bottom: 2rem;
@@ -314,7 +311,7 @@ h1, h2, h3, h4, h5, h6 {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  padding: 4px;
+  padding: 0;
 }
 
 /* Controls size of example circles */
