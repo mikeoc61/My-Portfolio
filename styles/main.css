@@ -46,6 +46,7 @@ html {
   margin: 0;
   padding: 0;
   background-color: darkgrey;
+  min-width: 520px;
 }
 
 body {
@@ -99,30 +100,9 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: .2rem;
 }
 
-/* Change appearance for smaller width devices */
-
-@media (max-width: 660px) {
-  html {
-    font-size: 35%;
-  }
-}
-
-@media (max-width: 590px) {
-  html {
-    font-size: 25%;
-  }
-}
-
-@media screen and (max-width: 450px) {
-  html {
-    font-size: 15%;
-  }
-}
-
 /* FontAwesome brands and fonts */
 
-.fas,
-.fab {
+.fas, .fab {
   font-size: 6rem;
 }
 
@@ -194,19 +174,6 @@ h1, h2, h3, h4, h5, h6 {
   display: inline-block;
 }
 
-/* Styles used in intro section */
-
-/* Add photo to left of introductory remarks */
-
-.headshot {
-  width: 18vw;
-  float: left;
-  margin-right: 1rem;
-  border: 1px solid darkgrey;
-  border-radius: 4px;
-  box-shadow: 0 20px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-}
-
 .name {
   font-family: 'Noto Serif', serif;
   font-size: 5rem;
@@ -223,6 +190,69 @@ h1, h2, h3, h4, h5, h6 {
   font-style: normal;
   font-weight: 400;
   margin: 0;
+}
+
+/* Responsive design styles used in intro section */
+/* Use Grid style display for welcome section */
+
+#welcome {
+  display: grid;
+  grid-template-columns: 20vw auto;
+  grid-template-rows: 50px auto;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  align-items: center;
+  justify-items: center;
+  grid-template-areas:
+    "photo welcome"
+    "photo my-text"
+}
+
+@media (max-width: 666px) {
+  html {
+    font-size: 35%;
+  }
+  #welcome {
+    grid-row-gap: 10px;
+    grid-template-areas:
+      "welcome welcome"
+      "photo my-text"
+  }
+  .welcome-head {
+    margin: 0;
+  }
+}
+
+@media (max-width: 590px) {
+  html {
+    font-size: 32%;
+  }
+  .fas, .fab {
+    font-size: 4.5rem;
+    margin-top: .4rem;
+  }
+}
+
+
+.welcome-head {
+  grid-area: welcome;
+  font-size: 4rem;
+  font-weight: bold;
+  align-self: start;
+}
+
+/* Photo places to left of introductory text */
+
+.headshot {
+  width: 20vw;
+  grid-area: photo;
+  border: 1px solid darkgrey;
+  border-radius: 4px;
+  box-shadow: 0 20px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.welcome-text {
+  grid-area: my-text;
 }
 
 /*  Helpers Styles */
@@ -273,7 +303,6 @@ h1, h2, h3, h4, h5, h6 {
   padding-left: 2rem;
   padding-right: 2rem;
   margin: 2rem;
-  min-height: 20vw;       /* required by Intro section only */
 }
 
 /* Controls About and Portfolio section separator content */
