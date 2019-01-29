@@ -46,7 +46,6 @@ html {
   margin: 0;
   padding: 0;
   background-color: darkgrey;
-  min-width: 520px;
 }
 
 body {
@@ -55,6 +54,8 @@ body {
   margin: 0 auto;
   width: 90%;
   min-height: min-content;
+  min-width: 520px;
+  max-width: 1024px;
 }
 
 /* Navigation bar controls */
