@@ -215,7 +215,7 @@ h1, h2, h3, h4, h5, h6 {
   /* align-self: start; */
 }
 
-@media (max-width: 725px) {
+@media (max-width: 730px) {
   html {
     font-size: 34%;
   }
