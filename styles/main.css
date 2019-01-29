@@ -238,7 +238,7 @@ h1, h2, h3, h4, h5, h6 {
   grid-area: welcome;
   font-size: 4rem;
   font-weight: bold;
-  align-self: start;
+  /* align-self: start; */
 }
 
 /* Photo places to left of introductory text */
@@ -253,6 +253,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .welcome-text {
   grid-area: my-text;
+  margin: 0;
 }
 
 /*  Helpers Styles */
