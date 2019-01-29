@@ -270,7 +270,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .section {
   font-size: 4.0rem;
-  min-height: 6rem;
+  min-height: 8rem;
   position: relative;
   padding-top: 1rem;
   padding-bottom: 2rem;
