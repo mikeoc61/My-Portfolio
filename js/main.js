@@ -33,10 +33,10 @@ const myWork = [
     'desc': "Function as a Service (FaaS) implementation which monitors a basket \
              of foreign currencies for \
              changes relative to USD. Utilizes Currency Layer service for \
-             latest exchange rate quotes, AWS API Gateway and Lambda for integration \
-             and execution and AWS DynamoDB as a persistent \
+             latest exchange rate quotes, AWS API Gateway and Lambda for integration, \
+             routing and execution and AWS DynamoDB is used as a persistent \
              datastore so that current rates can be compared with previously \
-             saved rates and change percentages can be calculated. Utilizes AWS S3 Storage \
+             saved rates and change percentages calculated. Utilizes AWS S3 Storage \
              and CloudFront CDN to distribute CSS, Header and Footer HTML to client browser",
     'image': {
       'desc': "Serverless Currency Rate Tracker",
